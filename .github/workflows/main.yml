@@ -20,10 +20,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
     - name: Create Conda environment with "environment.yml"
       with:
-        args: conda env create --file environment.yml
+        args: conda env create --file ./environment.yml
 
     # Runs a single command using the runners shell
     - name: Run pull favorites
