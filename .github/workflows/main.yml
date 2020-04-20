@@ -33,9 +33,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run pull favorites
-      run: |
-        conda activate twint
-        python scrape.py
+      run: python scrape.py
     
     - name: Commit changes
       run: | 
