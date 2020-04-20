@@ -34,9 +34,6 @@ jobs:
       with:
         commit_message: Apply automatic changes
 
-        # Optional git params
-        commit_options: '--no-verify --signoff'
-
         # Optional local file path to the repository
         repository: .
 
