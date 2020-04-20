@@ -13,7 +13,12 @@ c.Output = 'favorites'
 twint.run.Favorites(c)
 
 new_favorites = twint.storage.panda.Tweets_df
-favorites_df = pd.read_csv('favorites/favorites-all.csv', sep=';')
+favorites_df = pd.read_csv('favorites/favorites-all.csv', sep='\t')
+new_json = pd.read_json('favorites/tweets.json', lines=True)
+current_json = pd.read_json('favorites/current-tweets.json')
 
 favorites_df = pd.concat([favorites_df, new_favorites])
-favorites_df.to_csv('favorites/favorites-all.csv', sep=';', index=False)
+current_json = pd.concat([current_json, new_json])
+
+favorites_df.to_csv('favorites/favorites-all.csv', sep='\t', index=False)
+favorites_df.to_json('favorites/current-tweets.json')
