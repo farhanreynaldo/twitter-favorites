@@ -12,7 +12,7 @@ c.Output = 'favorites'
 
 twint.run.Favorites(c)
 
-new_favorites = twint.storage.pandas.Tweets_df
+new_favorites = twint.storage.panda.Tweets_df
 favorites_df = pd.read_csv('favorites/favorites-all.csv')
 
 favorites_df = pd.concat([favorites_df, new_favorites])
