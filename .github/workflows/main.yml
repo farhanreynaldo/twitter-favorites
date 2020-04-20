@@ -21,7 +21,7 @@ jobs:
 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Create Conda environment with "environment.yml"
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       with:
         args: conda env create --file ./environment.yml
 
