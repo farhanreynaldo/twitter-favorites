@@ -27,7 +27,7 @@ jobs:
     - name: Run pull favorites
       run: python scrape.py
     
-     - name: Commit changes
+    - name: Commit changes
       run: | 
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
