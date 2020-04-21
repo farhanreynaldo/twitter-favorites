@@ -4,7 +4,7 @@ import pandas as pd
 username = "xynx"
 c = twint.Config()
 c.Username = username
-c.Limit = 100
+c.Limit = 40
 c.Pandas = True
 c.Pandas_clean = True
 c.Store_json = True
