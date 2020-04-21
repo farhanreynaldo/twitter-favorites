@@ -21,4 +21,4 @@ favorites_df = pd.concat([favorites_df, new_favorites])
 current_json = pd.concat([current_json, new_json])
 
 favorites_df.to_csv('favorites/favorites-all.csv', sep='\t', index=False)
-current_json.to_json('favorites/current-tweets.json')
+current_json.to_json('favorites/current-tweets.json', orient='records')
