@@ -40,6 +40,6 @@ jobs:
         repository: .
 
         # Optional commit user and author settings
-        commit_user_name: My GitHub Actions Bot
-        commit_user_email: my-github-actions-bot@example.org
-        commit_author: Author <actions@github.com>
+        commit_user_name: GitHub Actions Bot
+        commit_user_email: github-actions-bot@github.com.com
+        commit_author: Bot <actions@github.com>
