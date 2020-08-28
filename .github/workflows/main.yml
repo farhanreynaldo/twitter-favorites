@@ -6,8 +6,6 @@ name: Scraper
 # events but only for the master branch
 on:
   push:
-  schedule:
-    - cron: '0 0 * * *'
 
 env:
   ENV_FILE: environment.yml
